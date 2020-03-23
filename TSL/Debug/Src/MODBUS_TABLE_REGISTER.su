@@ -1,0 +1,5 @@
+MODBUS_TABLE_REGISTER.c:181:10:get_size_Table	0	static
+MODBUS_TABLE_REGISTER.c:185:10:get_size_Table_Hardware_interface	0	static
+MODBUS_TABLE_REGISTER.c:189:6:set_register	0	static
+MODBUS_TABLE_REGISTER.c:193:6:get_address	0	static
+MODBUS_TABLE_REGISTER.c:197:9:get_Value	0	static

@@ -1,0 +1,9 @@
+fm25lxx.c:13:6:FM25LXX_WriteByteSPI	16	static
+fm25lxx.c:18:9:FM25LXX_ReadByteSPI	16	static
+fm25lxx.c:30:6:FM25LXX_EnableWrite	8	static
+fm25lxx.c:43:6:FM25LXX_DisableWrite	8	static
+fm25lxx.c:55:15:FM25LXX_ReadStatusReg	16	static
+fm25lxx.c:76:6:FM25LXX_WriteMemory	16	static
+fm25lxx.c:97:15:FM25LXX_ReadMemory	16	static
+fm25lxx.c:122:6:FM25LXX_SaveData	24	static
+fm25lxx.c:139:6:FM25LXX_LoadData	24	static

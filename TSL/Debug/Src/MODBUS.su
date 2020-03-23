@@ -1,0 +1,15 @@
+MODBUS.c:74:6:tx1_en	16	static
+MODBUS.c:80:6:rx1_en	8	static
+MODBUS.c:85:9:register_address_rw	0	static
+MODBUS.c:94:9:MODBUS_Nregs_Support_Write	0	static
+MODBUS.c:103:9:register_value_in_range	0	static
+MODBUS.c:152:6:crc16	16	static
+MODBUS.c:163:6:exeption_response	16	static
+MODBUS.c:187:6:loop_back_diagnostic	16	static
+MODBUS.c:216:6:preset_a_single_register	40	static
+MODBUS.c:289:6:preset_multiple_register	32	static
+MODBUS.c:367:6:read_multi_registers	32	static
+MODBUS.c:476:6:clear_modbus_buffer	0	static
+MODBUS.c:486:6:modbus	16	static
+MODBUS.c:448:6:run_modbus	24	static
+MODBUS.c:528:6:MODBUS1_IT	0	static

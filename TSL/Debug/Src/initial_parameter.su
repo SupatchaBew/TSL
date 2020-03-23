@@ -1,0 +1,7 @@
+initial_parameter.c:30:6:Read_frame_nValue	0	static
+initial_parameter.c:60:6:Read_single_value	8	static
+initial_parameter.c:71:6:Save_frame_nValue	0	static
+initial_parameter.c:99:6:Save_single_value	8	static
+initial_parameter.c:110:6:Save_single_value_byReg	0	static
+initial_parameter.c:165:6:Set_Initial_nValue	0	static
+initial_parameter.c:177:6:Load_parameter	24	static
