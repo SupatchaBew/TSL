@@ -151,7 +151,7 @@ void run_motor(uint8_t id)
 		halsensor[1][0].Counter = 0;
 	}
 
-	if(HAL_GPIO_ReadPin(HAL11_GPIO_Port, HAL11_Pin) == GPIO_PIN_SET){
+	if(HAL_GPIO_ReadPin(LB01_GPIO_Port, LB01_Pin) == GPIO_PIN_SET){
 		halsensor[0][0].Counter = 0;
 	}
 

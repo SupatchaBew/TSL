@@ -98,14 +98,14 @@ void Error_Handler(void);
 #define PWM_1_GPIO_Port GPIOB
 #define PWM_2_Pin GPIO_PIN_5
 #define PWM_2_GPIO_Port GPIOB
-#define HAL11_Pin GPIO_PIN_6
-#define HAL11_GPIO_Port GPIOB
+#define LB01_Pin GPIO_PIN_6
+#define LB01_GPIO_Port GPIOB
 #define HAL21_Pin GPIO_PIN_7
 #define HAL21_GPIO_Port GPIOB
 #define LT01_Pin GPIO_PIN_8
 #define LT01_GPIO_Port GPIOB
-#define LB01_Pin GPIO_PIN_9
-#define LB01_GPIO_Port GPIOB
+#define HAL11_Pin GPIO_PIN_9
+#define HAL11_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
