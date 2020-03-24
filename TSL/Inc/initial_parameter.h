@@ -70,6 +70,7 @@ typedef struct
 	uint16_t minor_version;
 
 	uint8_t rundowntoreset[2];
+	uint8_t motor_id;
 
 }NORMAL_Parameter_Typedef;
 

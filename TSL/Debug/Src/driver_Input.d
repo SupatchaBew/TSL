@@ -31,7 +31,7 @@ Src/driver_Input.o: ../Src/driver_Input.c ../Inc/main.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h \
  ../Inc/global.h ../Inc/main.h ../Inc/driver_Input.h \
  ../Inc/driver_Output.h ../Inc/driver_Input.h ../Inc/initial_parameter.h \
- ../Inc/fm25lxx.h ../Inc/spi.h
+ ../Inc/fm25lxx.h ../Inc/spi.h ../Inc/function.h
 
 ../Inc/main.h:
 
@@ -110,3 +110,5 @@ Src/driver_Input.o: ../Src/driver_Input.c ../Inc/main.h \
 ../Inc/fm25lxx.h:
 
 ../Inc/spi.h:
+
+../Inc/function.h:

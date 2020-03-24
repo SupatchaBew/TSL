@@ -245,10 +245,10 @@ void TIM16_IRQHandler(void)
   /* USER CODE END TIM16_IRQn 0 */
   HAL_TIM_IRQHandler(&htim16);
   /* USER CODE BEGIN TIM16_IRQn 1 */
-	if(nValue.LastStatus[1] == 2)
+	if(nValue.LastStatus[1] == Move_up)
 //		trig_H2[2].Counter += 1;
 		halsensor[1][0].Counter += 1;
-	else if(nValue.LastStatus[1] == 1)
+	else if(nValue.LastStatus[1] == Move_down)
 		halsensor[1][0].Counter -= 1;
   /* USER CODE END TIM16_IRQn 1 */
 }
@@ -263,10 +263,10 @@ void TIM17_IRQHandler(void)
   /* USER CODE END TIM17_IRQn 0 */
   HAL_TIM_IRQHandler(&htim17);
   /* USER CODE BEGIN TIM17_IRQn 1 */
-	if(nValue.LastStatus[0] == 2)
+	if(nValue.LastStatus[0] == Move_up)
 //		trig_H2[2].Counter += 1;
 		halsensor[0][0].Counter += 1;
-	else if(nValue.LastStatus[0] == 1)
+	else if(nValue.LastStatus[0] == Move_down)
 		halsensor[0][0].Counter -= 1;
   /* USER CODE END TIM17_IRQn 1 */
 }

@@ -10,6 +10,7 @@
 #include "global.h"
 #include "driver_Input.h"
 #include "initial_parameter.h"
+#include "function.h"
 
 /* Private typedef -----------------------------------------------------------*/
 
@@ -38,10 +39,21 @@ void get_Limit_Status(void) {
 	sInput.Even.status.Bit.LIMIT_BM_2 = LB_2;
 }
 void get_dipSwitch_Status(void) {
-	sInput.Even.status.Bit.DIPSW_LEVEL_1 = 1;
-	sInput.Even.status.Bit.DIPSW_LEVEL_2 = 0;
-	sInput.Even.status.Bit.DIPSW_LEVEL_3 = 0;
-	sInput.Even.status.Bit.DIPSW_LEVEL_4 = 0;
+	if(DIP_SW_LEVEL_1){
+		sInput.highest_position = LINEAR_HIGHT_LEVEL_1;
+	}
+	else if(DIP_SW_LEVEL_2){
+		sInput.highest_position = LINEAR_HIGHT_LEVEL_2;
+	}
+	else if(DIP_SW_LEVEL_3){
+		sInput.highest_position = LINEAR_HIGHT_LEVEL_3;
+	}
+	else if(DIP_SW_LEVEL_4){
+		sInput.highest_position = LINEAR_HIGHT_LEVEL_4;
+	}
+	else{
+		sInput.highest_position = LINEAR_HIGHT_LEVEL_0;
+	}
 }
 void get_Encoder_Status(char stA, char stB, Encoder_Type *En) {
 	En->Pin.INA = stA;

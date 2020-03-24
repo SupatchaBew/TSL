@@ -31,6 +31,11 @@
 #define	HAL1_2						HAL_GPIO_ReadPin(HAL12_GPIO_Port, HAL12_Pin)
 #define	HAL2_2						HAL_GPIO_ReadPin(HAL22_GPIO_Port, HAL22_Pin)
 
+#define DIP_SW_LEVEL_1				0
+#define DIP_SW_LEVEL_2				0
+#define DIP_SW_LEVEL_3				0
+#define DIP_SW_LEVEL_4				1
+
 enum TRIG_INPUT {
 	TRIG, DEBOUNCE, RELEASE
 };
@@ -57,7 +62,7 @@ typedef struct {
 } Encoder_Type;
 typedef struct {
 	union {
-		uint16_t Byte;
+		uint8_t Byte;
 		struct {
 			uint8_t SW_DN :1;			//	bit 0
 			uint8_t SW_UP :1;			//	bit 1
@@ -67,10 +72,6 @@ typedef struct {
 			uint8_t LIMIT_BM_1 :1;   	//  bit 5
 			uint8_t LIMIT_TP_2 :1;  	//  bit 6
 			uint8_t LIMIT_BM_2 :1;   	//  bit 7
-			uint8_t DIPSW_LEVEL_1 :1;  	//  bit 0
-			uint8_t DIPSW_LEVEL_2 :1;  	//  bit 1
-			uint8_t DIPSW_LEVEL_3 :1;  	//  bit 2
-			uint8_t DIPSW_LEVEL_4 :1;  	//  bit 3
 		} Bit;
 	} status;
 } Pin_Type;
@@ -80,6 +81,7 @@ typedef struct {
 	Pin_Type Even;
 	Encoder_Type Encoder2;
 	Encoder_Type Encoder1;
+	uint16_t highest_position;
 } Input_sType;
 
 typedef struct {

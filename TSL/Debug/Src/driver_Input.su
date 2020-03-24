@@ -1,8 +1,8 @@
-driver_Input.c:28:6:get_Switch_Status	16	static
-driver_Input.c:34:6:get_Limit_Status	16	static
-driver_Input.c:40:6:get_dipSwitch_Status	0	static
-driver_Input.c:46:6:get_Encoder_Status	12	static
-driver_Input.c:86:6:trig_input	0	static
-driver_Input.c:123:6:trig_Count	0	static
-driver_Input.c:147:6:run_Input	8	static
-driver_Input.c:157:6:run_Count	24	static
+driver_Input.c:29:6:get_Switch_Status	16	static
+driver_Input.c:35:6:get_Limit_Status	16	static
+driver_Input.c:41:6:get_dipSwitch_Status	0	static
+driver_Input.c:58:6:get_Encoder_Status	12	static
+driver_Input.c:98:6:trig_input	0	static
+driver_Input.c:135:6:trig_Count	0	static
+driver_Input.c:159:6:run_Input	8	static
+driver_Input.c:169:6:run_Count	24	static

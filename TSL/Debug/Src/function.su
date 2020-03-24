@@ -1,6 +1,5 @@
 function.c:21:9:IsClosedToLimit	0	static
-function.c:28:6:run_Function	0	static
-function.c:115:6:run	0	static
-function.c:170:6:check_holding_key	0	static
-function.c:193:6:Reset_default_position	16	static
-function.c:225:6:run_motor	24	static
+function.c:26:6:Reset_default_position	16	static
+function.c:57:6:set_stop_motor	0	static
+function.c:72:6:set_motor_direction	8	static
+function.c:98:6:run_motor	24	static
